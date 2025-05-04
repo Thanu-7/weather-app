@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Static Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Blurred background image -->
+  <div class="background-image"></div>
+
+  <div class="container">
+    <header>
+      <h1>Weather Dashboard</h1>
+      <button id="mode-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+    </header>
+
+    <section class="search-section">
+      <input type="text" placeholder="Enter city name..." aria-label="City Name" />
+      <button>Search</button>
+    </section>
+
+    <section class="current-weather">
+      <div class="date-time" id="date-time">Loading date & time...</div>
+      <h2 class="city-name">New York</h2>
+      <div class="weather-main">
+        <div class="weather-icon sunny" aria-label="Sunny weather icon"></div>
+        <div class="temperature">22°C</div>
+      </div>
+      <div class="condition">Sunny</div>
+    </section>
+
+    <section class="forecast">
+      <h3>5-Day Forecast</h3>
+      <div class="forecast-cards">
+        <div class="forecast-card">
+          <div class="day">Mon</div>
+          <div class="weather-icon rainy" aria-label="Rainy weather icon"></div>
+          <div class="description">Rainy</div>
+          <div class="temp">18°C</div>
+        </div>
+        <div class="forecast-card">
+          <div class="day">Tue</div>
+          <div class="weather-icon cloudy" aria-label="Cloudy weather icon"></div>
+          <div class="description">Cloudy</div>
+          <div class="temp">20°C</div>
+        </div>
+        <div class="forecast-card">
+          <div class="day">Wed</div>
+          <div class="weather-icon snowy" aria-label="Snowy weather icon"></div>
+          <div class="description">Snowy</div>
+          <div class="temp">0°C</div>
+        </div>
+        <div class="forecast-card">
+          <div class="day">Thu</div>
+          <div class="weather-icon thunder" aria-label="Thunder weather icon"></div>
+          <div class="description">Thunder</div>
+          <div class="temp">16°C</div>
+        </div>
+        <div class="forecast-card">
+          <div class="day">Fri</div>
+          <div class="weather-icon sunny" aria-label="Sunny weather icon"></div>
+          <div class="description">Sunny</div>
+          <div class="temp">23°C</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
